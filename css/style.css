@@ -24,6 +24,23 @@
     background-color: #000 !important;
 }
 
+.whatsappButton {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #04f85d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
