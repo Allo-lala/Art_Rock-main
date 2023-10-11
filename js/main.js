@@ -1,3 +1,5 @@
+
+
 (function ($) {
     "use strict";
 
@@ -11,9 +13,6 @@
     };
     spinner();
 
-     
-    
-    
     // Initiate the wowjs
     new WOW().init();
 

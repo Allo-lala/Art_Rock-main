@@ -3,52 +3,19 @@
     --primary: #070707;
     --secondary: #0c0c0c;
     --light: #F4F7FE;
-    --dark: #14183E;
+    --dark: #070707;
+}
+.bg-primary {
+    background-color: #000000 !important;
 }
 
 /* styles.css */
 
-/* Style the artist profile container */
-.artist-profile {
-    display: flex;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-}
-
-/* Style the artist image */
-.artist-image {
-    flex: 1;
-    text-align: center;
-}
-
-.artist-image img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Style the artist biography */
-.artist-bio {
-    flex: 2;
-    padding: 20px;
-}
-
-.artist-bio h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.artist-bio p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -56,104 +23,8 @@
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
 }
-/* Flex container for art pieces */
-.art-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-/* Individual art piece card */
-.art-piece {
-    flex: 0 1 calc(33.33% - 20px); /* Adjust the width as needed */
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    text-align: center;
-    background-color: #f9f9f9;
-}
-
-/* Art piece image */
-.art-piece img {
-    max-width: 100%;
-    height: auto;
-}
-/* styles.css */
-
-/* Style the artist container as a flexbox */
-.artist-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-/* Style individual artist profiles */
-.artist-profile {
-    width: 300px;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-.artist-profile img {
-    max-width: 100%;
-}
-
-/* Style the "View Profile" link */
-.artist-profile a {
-    text-decoration: none;
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.artist-profile a:hover {
-    background-color: #0056b3;
-}
-
-/************************* Art html page******************************** */
-
-/* Toggle button styles */
-.toggle-details {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-/* Details container */
-.details {
-    display: none;
-    margin-top: 10px;
-}
-
-/* Price and artist container */
-.price-artist {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Proceed to Payment button */
-.proceed-to-payment {
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-#spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
-    visibility: visible;
-    opacity: 1;
-}
-.bg-primary {
-    background-color: #000 !important;
-}
-
+/* whatsapp button */
 .whatsappButton {
     position: fixed;
     left: 20px;
@@ -369,7 +240,7 @@ h6,
     height: 10px;
     top: 2px;
     left: 0;
-    background: rgba(33, 66, 177, .5);
+    background: rgba(8, 8, 8, 0.5);
 }
 
 .section-title h6::after {
@@ -703,7 +574,7 @@ h6,
 }
 
 .text-primary {
-    color: #14183e !important;
+    color: #000000 !important;
 }
 
 .footer .footer-menu a {
