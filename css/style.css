@@ -18,6 +18,57 @@ a:active{
   width:166.23px;
   
 }
+/* .underlined {
+    text-decoration: underline;
+} */
+
+.artist-bio {
+    max-height: 120px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.text {
+    overflow: hidden;
+    max-height: 150px; /* adjust the height as needed */
+    transition: max-height 0.3s ease-in-out;
+}
+
+#readMoreBtn {
+    background-color: #5a5de7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#readMoreBtn:hover {
+    background-color: #4645a0;
+}
+
+.read-more {
+    color: rgba(73, 32, 223, 0.788);
+    /* text-decoration: underline; */
+    cursor: pointer;
+}
+
+.additional-content {
+    display: none;
+}
+
+.artist-bio.expanded {
+    max-height: none;
+}
+
+.artist-bio.expanded .additional-content {
+    display: block;
+}
+
 button{
   user-select:none;
   -webkit-user-select:none;

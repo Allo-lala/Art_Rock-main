@@ -10,6 +10,24 @@
         }, 1);
     };
     spinner();
+    
+    //////////////////////// read readMoreButton
+        document.addEventListener('DOMContentLoaded', function () {
+            const readMoreButton = document.querySelector('.read-more');
+            const bio = document.querySelector('.artist-bio');
+            let expanded = false;
+
+            readMoreButton.addEventListener('click', function() {
+                if (expanded) {
+                    bio.classList.remove('expanded');
+                    readMoreButton.textContent = 'Read more...';
+                } else {
+                    bio.classList.add('expanded');
+                    readMoreButton.textContent = 'Read less...';
+                }
+                expanded = !expanded;
+            });
+        });
 
     // Initiate the wowjs
     new WOW().init();
@@ -44,21 +62,6 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
-    const trendingSwiper = new Swiper(".trending__swiper", {
-      loop: true,
-      slidesPerView: "auto",
-      spaceBetween: 50,
-    });
-    
-    const testimonialSwiper = new Swiper(".testimonial__swiper", {
-      loop: true,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
   
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -73,20 +76,22 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-    
+
+    const trendingSwiper = new Swiper(".trending__swiper", {
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 50,
+      });
+      
+      const testimonialSwiper = new Swiper(".testimonial__swiper", {
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
 })(jQuery);
 
-const trendingSwiper = new Swiper(".trending__swiper", {
-  loop: true,
-  slidesPerView: "auto",
-  spaceBetween: 50,
-});
 
-const testimonialSwiper = new Swiper(".testimonial__swiper", {
-  loop: true,
-  spaceBetween: 30,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
