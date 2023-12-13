@@ -6,6 +6,29 @@
     --dark: #070707;
 }
 
+.projectimage {
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.content{
+    margin: 1em;
+}
+
+.contain {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+#more1, #more2, #more3, #more4 {
+    display: none;
+  }
+  
+
 #text{
 display:none;
 }
@@ -21,7 +44,7 @@ a:active{
 /* .underlined {
     text-decoration: underline;
 } */
-
+/* 
 .artist-bio {
     max-height: 120px;
     overflow: hidden;
@@ -35,9 +58,10 @@ a:active{
 
 .text {
     overflow: hidden;
-    max-height: 150px; /* adjust the height as needed */
+    max-height: 150px; /* adjust the height as needed 
     transition: max-height 0.3s ease-in-out;
 }
+*/
 
 #readMoreBtn {
     background-color: #5a5de7;
@@ -45,7 +69,14 @@ a:active{
     border: none;
     padding: 10px;
     cursor: pointer;
-}
+} */
+/* read more workshop button  */
+  /* #readMoreContent {
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  } */
+
 
 #readMoreBtn:hover {
     background-color: #4645a0;
@@ -57,6 +88,11 @@ a:active{
     cursor: pointer;
 }
 
+#readMorBtn:hover {
+    background-color: #4645a0;
+}
+/* 
+
 .additional-content {
     display: none;
 }
@@ -67,7 +103,7 @@ a:active{
 
 .artist-bio.expanded .additional-content {
     display: block;
-}
+} */
 
 button{
   user-select:none;

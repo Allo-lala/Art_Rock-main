@@ -12,22 +12,22 @@
     spinner();
     
     //////////////////////// read readMoreButton
-        document.addEventListener('DOMContentLoaded', function () {
-            const readMoreButton = document.querySelector('.read-more');
-            const bio = document.querySelector('.artist-bio');
-            let expanded = false;
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     const readMoreButton = document.querySelector('.read-more');
+        //     const bio = document.querySelector('.artist-bio');
+        //     let expanded = false;
 
-            readMoreButton.addEventListener('click', function() {
-                if (expanded) {
-                    bio.classList.remove('expanded');
-                    readMoreButton.textContent = 'Read more...';
-                } else {
-                    bio.classList.add('expanded');
-                    readMoreButton.textContent = 'Read less...';
-                }
-                expanded = !expanded;
-            });
-        });
+        //     readMoreButton.addEventListener('click', function() {
+        //         if (expanded) {
+        //             bio.classList.remove('expanded');
+        //             readMoreButton.textContent = 'Read more...';
+        //         } else {
+        //             bio.classList.add('expanded');
+        //             readMoreButton.textContent = 'Read less...';
+        //         }
+        //         expanded = !expanded;
+        //     });
+        // });
 
     // Initiate the wowjs
     new WOW().init();
@@ -93,5 +93,22 @@
       });
 
 })(jQuery);
+
+
+function myFunction(articleNumber) {
+    var dots = document.getElementById("dots" + articleNumber);
+    var moreText = document.getElementById("more" + articleNumber);
+    var btnText = document.getElementsByTagName("button")[articleNumber - 1];
+  
+    if (dots.style.display === "none" || dots.style.display === "") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
 
 

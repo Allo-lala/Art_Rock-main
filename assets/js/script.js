@@ -66,3 +66,22 @@ const filter = function () {
 }
 
 addEventOnElem(filterBtns, "click", filter);
+
+/*8****read more won awali****/
+
+function myFunction(articleNumber) {
+  var dots = document.getElementById("dots" + articleNumber);
+  var moreText = document.getElementById("more" + articleNumber);
+  var btnText = document.getElementsByTagName("button")[articleNumber - 1];
+
+  if (dots.style.display === "none" || dots.style.display === "") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.innerHTML = "Read Less";
+    moreText.style.display = "inline";
+  }
+}
+
