@@ -1,4 +1,4 @@
-/********** Template CSS **********/
+/**********CSS **********/
 :root {
     --primary: #070707;
     --secondary: #0c0c0c;
@@ -13,9 +13,17 @@
     margin: 15px;
     border-radius: 50%;
 }
+/* background light for the services, team and ............ */
+.bg-light {
+    background-color: #ffffff !important;
+}
 
 .content{
     margin: 1em;
+}
+
+.container-fluid{
+    width: 100%;
 }
 
 .contain {
@@ -41,69 +49,11 @@ a:active{
   width:166.23px;
   
 }
-/* .underlined {
-    text-decoration: underline;
-} */
-/* 
-.artist-bio {
-    max-height: 120px;
-    overflow: hidden;
-    position: relative;
-}
-
-.content {
-    max-width: 600px;
-    text-align: justify;
-}
-
-.text {
-    overflow: hidden;
-    max-height: 150px; /* adjust the height as needed 
-    transition: max-height 0.3s ease-in-out;
-}
-*/
-
-#readMoreBtn {
-    background-color: #5a5de7;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-} */
-/* read more workshop button  */
-  /* #readMoreContent {
-    max-height: 100px;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  } */
-
-
-#readMoreBtn:hover {
-    background-color: #4645a0;
-}
 
 .read-more {
     color: rgba(73, 32, 223, 0.788);
-    /* text-decoration: underline; */
     cursor: pointer;
 }
-
-#readMorBtn:hover {
-    background-color: #4645a0;
-}
-/* 
-
-.additional-content {
-    display: none;
-}
-
-.artist-bio.expanded {
-    max-height: none;
-}
-
-.artist-bio.expanded .additional-content {
-    display: block;
-} */
 
 button{
   user-select:none;
@@ -397,8 +347,8 @@ h6,
     width: 90px;
     height: 90px;
     color: var(--primary);
-    background: var(--light);
-    transition: .5s;
+    background: #ffffff;
+    transition: .3s;
 }
 
 .service-item:hover .service-icon {
@@ -529,7 +479,7 @@ h6,
 }
 
 .accordion .accordion-button {
-    background: var(--light);
+    background: #ffffff;
     border-radius: 2px;
 }
 
@@ -702,176 +652,3 @@ h6,
     border-right: none;
 }
 
-/* art page gallery particulars */
-::selection{
-  color: #fff;
-  background: #212222;
-}
-body{
-  padding: 10px;
-}
-.wrapper{
-  margin: 100px auto;
-  max-width: 1100px;
-}
-button {
-    transition: transform 0.5s ease-in-out;
-}
-.wrapper nav{
-  display: flex;
-  justify-content: center;
-}
-.wrapper .items{
-  display: flex;
-  max-width: 720px;
-  width: 100%;
-  justify-content: space-between;
-}
-.items span{
-  padding: 7px 25px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  color: #121213;
-  border-radius: 50px;
-  border: 2px solid #0a0a0a;
-  transition: all 0.3s ease;
-}
-.items span.active,
-.items span:hover{
-  color: #fff;
-  background: #141414;
-}
-
-.gallery{
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-.gallery .image{
-  width: calc(100% / 4);
-  padding: 7px;
-}
-.gallery .image span{
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-.gallery .image img{
-  width: 100%;
-  vertical-align: middle;
-  transition: all 0.3s ease;
-}
-.gallery .image:hover img{
-  transform: scale(1.1);
-}
-.gallery .image.hide{
-  display: none;
-}
-.gallery .image.show{
-  animation: animate 0.4s ease;
-}
-@keyframes animate {
-  0%{
-    transform: scale(0.5);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-
-.preview-box{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  background: #fff;
-  max-width: 700px;
-  width: 100%;
-  z-index: 5;
-  opacity: 0;
-  pointer-events: none;
-  border-radius: 3px;
-  padding: 0 5px 5px 5px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-}
-.preview-box.show{
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
-}
-.preview-box .details{
-  padding: 13px 15px 13px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.details .title{
-  display: flex;
-  font-size: 18px;
-  font-weight: 400;
-}
-.details .title p{
-  font-weight: 500;
-  margin-left: 5px;
-}
-.details .icon{
-  color: #0f0f0f;
-  font-style: 22px;
-  cursor: pointer;
-}
-.preview-box .image-box{
-  width: 100%;
-  display: flex;
-}
-.image-box img{
-  width: 100%;
-  border-radius: 0 0 3px 3px;
-}
-.shadow{
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  display: none;
-  background: rgba(0,0,0,0.4);
-}
-.shadow.show{
-  display: block;
-}
-
-@media (max-width: 1000px) {
-  .gallery .image{
-    width: calc(100% / 3);
-  }
-}
-@media (max-width: 800px) {
-  .gallery .image{
-    width: calc(100% / 2);
-  }
-}
-@media (max-width: 700px) {
-  .wrapper nav .items{
-    max-width: 600px;
-  }
-  nav .items span{
-    padding: 7px 15px;
-  }
-}
-@media (max-width: 600px) {
-  .wrapper{
-    margin: 30px auto;
-  }
-  .wrapper nav .items{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  nav .items span{
-    margin: 5px;
-  }
-  .gallery .image{
-    width: 100%;
-  }
-}
