@@ -1,4 +1,10 @@
 /**********CSS **********/
+body{
+    margin: 0;
+    background-color: #F4F4F4;
+    font-family: sans-serif;
+}
+
 :root {
     --primary: #070707;
     --secondary: #0c0c0c;
@@ -41,7 +47,7 @@
 display:none;
 }
 a:active{
-    color:#ffd323;
+    color:#eec41e;
   }
 .btn-container{
   margin: auto;
@@ -90,9 +96,9 @@ button{
 /* whatsapp button */
 .whatsappButton {
     position: fixed;
-    left: 20px;
+    left: 45px;
     bottom: 20px;
-    z-index: 9999;
+    z-index: 99;
     width: 60px;
     height: 60px;
     background-color: #04f85d;
@@ -651,4 +657,33 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+/* subscribe css  */
 
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #a39f9f;
+    border: 1px solid #ffffff;
+    color: #fff;
+    outline: none;
+    border-radius: 25px;
+  }
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #4bef10;
+    padding: 13px 30px;
+    border: 1px solid #4bef10;
+    border-radius: 20px;
+    top: 0;
+  }
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }

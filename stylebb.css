@@ -2,7 +2,7 @@
 body{
     margin: 0;
     background-color: #F4F4F4;
-    font-family: Poppins;
+    font-family: sans-serif;
 }
 :root{
     --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
@@ -30,23 +30,13 @@ body{
     --item5-zIndex: 7;
     --item5-opacity: 0;
 }
-header{
-    width: 1140px;
-    max-width: 90%;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    height: 50px;
-    align-items: center;
-}
-header .logo{
-    font-weight: bold;
-}
+
 header nav a{
     margin-left: 30px;
     text-decoration: none;
-    color: #555;
+    color: #080808;
     font-weight: 500;
+    
 }
 
 /* carousel */
@@ -112,15 +102,15 @@ header nav a{
 }
 .carousel .list .item .introduce .des{
     font-size: small;
-    color: #5559;
+    color: rgba(15, 29, 218, 0.6);
 }
 .carousel .list .item .introduce .seeMore{
-    font-family: Poppins;
+    font-family: sans-serif;
     margin-top: 1.2em;
     padding: 5px 0;
     border: none;
-    border-bottom: 1px solid #555;
-    background-color: transparent;
+    border-bottom: 1px solid #0424d6;
+    background-color: #3309ee;
     font-weight: bold;
     letter-spacing: 3px;
     transition: background 0.5s;
@@ -240,7 +230,7 @@ header nav a{
     }
 }
 
-/* detail  */
+/*detail  */
 .carousel .list .item .detail{
     opacity: 0;
     pointer-events: none;
@@ -300,9 +290,10 @@ header nav a{
     font-weight: 500;
 }
 .carousel.carousel.showDetail .list .item:nth-child(2) .checkout button:nth-child(2){
-    background-color: #693EFF;
+    background-color: #4311f8;
     color: #eee;
 }
+
 .carousel.showDetail .list .item:nth-child(2) .detail  .title,
 .carousel.showDetail .list .item:nth-child(2) .detail  .des,
 .carousel.showDetail .list .item:nth-child(2) .detail .specifications,
@@ -321,14 +312,17 @@ header nav a{
 }
 .arrows{
     position: absolute;
-    bottom: 10px;
+    top:50%;
+    /* bottom: 10px; */
     width: 1140px;
     max-width: 90%;
     display: flex;
     justify-content: space-between;
     left: 50%;
     transform: translateX(-50%);
+    
 }
+
 #prev,
 #next{
     width: 40px;
@@ -339,6 +333,7 @@ header nav a{
     font-size: large;
     bottom: 20%;
     left: 10%;
+    color:#000;
 }
 #next{
     left: unset;
@@ -351,14 +346,14 @@ header nav a{
     left: 50%;
     transform: translateX(-50%);
     border: none;
-    border-bottom: 1px solid #555;
-    font-family: Poppins;
+    font-family: sans-serif;
     font-weight: bold;
     letter-spacing: 3px;
-    background-color: transparent;
     padding: 10px;
-    /* opacity: 0; */
+    color: black;
     transition: opacity 0.5s;
+    background: #eb2709;
+    border-radius: 25%;
 }
 .carousel.showDetail #back{
     opacity: 1;
