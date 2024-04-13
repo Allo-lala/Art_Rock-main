@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo '<script>window.location.href = "index.html";</script>';
         exit;
     } else {
-        echo '<p>Oops! An error occurred while sending the General Inquiry. Please try again later.</p>';
+        echo '<p>Oops! An error occurred while submitting. Please try again later.</p>';
     }
 }
 ?>

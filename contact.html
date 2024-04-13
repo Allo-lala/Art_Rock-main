@@ -38,7 +38,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">Art<span class="text-dark">-</span>Rock</h1>
+                    <img id="logo" src="img/logo.png" alt="logo">
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -49,7 +49,7 @@
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="indexEC.html" class="nav-item nav-link">Our Gallery</a>
+                        <a href="gallery.html" class="nav-item nav-link">Our Gallery</a>
                         <a href="ArtBoard.html" class="nav-item nav-link">Art Board</a>
                         <a href="project.html" class="nav-item nav-link">Projects</a>
                         <div class="nav-item dropdown">
@@ -88,30 +88,28 @@
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Contact Us</div>
                 <h1 class="mb-4">If You Have Any Query, Please Contact Us</h1>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-7">
-                    <p class="text-center mb-4">The contact form for booking appointments and ............</p>
                     <div class="wow fadeIn" data-wow-delay="0.3s">
                         <form action="form.php" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control"  name="name" id="name" placeholder="Your Name">
+                                        <input type="text" class="form-control" required="required" name="name" id="name" placeholder="Your Name">
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control"    name="email" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" required="required"   name="email" id="email" placeholder="Your Email">
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control"  name="subject" id="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" required="required" name="subject" id="subject" placeholder="Subject">
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
@@ -121,15 +119,6 @@
                                         <label for="message">Message</label>
                                     </div>
                                 </div>
-                                <!-- <div class="col-12">
-                                    <b><label for="uploadfile">Upload a photo</label></b>
-                                    <input type="file" class="form-control-file" id="uploadfile">
-                                    <br>
-                                    <p id="" class="">
-                                        Upload the photo for your drawing or painting here.Do you have a piece you want customised? Don't worry if you are not sure yet,
-                                        you can email images later.
-                                    </p>
-                                </div> -->
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                 </div>
@@ -142,101 +131,94 @@
     </div>
     <!-- Contact End -->
         
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white-50 footer pt-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                    <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">Art<span class="text-primary">.</span>Rock</h1>
-                    </a>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                    <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Kampala, Uganda</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Career</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Robotic Automation</a>
-                    <a class="btn btn-link" href="">Machine learning</a>
-                    <a class="btn btn-link" href="">Predictive Analysis</a>
-                    <a class="btn btn-link" href="">Data Science</a>
-                    <a class="btn btn-link" href="">Robot Technology</a>
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-white-50 footer pt-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <a href="index.html" class="d-inline-block mb-3">
+                    <h1 class="text-white">Aroc</h1>
+                </a>
+                <p class="mb-0"></p>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <h5 class="text-white mb-4">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>Kampala, Uganda</p>
+                <p><i class="fa fa-phone-alt me-3"></i><a href="tel:+256702202491" class="footer-link">+256702202491</a></p>
+                <p><i class="fa fa-envelope me-3"></i><a href="mailto:arocug@gmail.com" class="contact-link">arocug@gmail.com</a></p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href="https://x.com/Aroc_ug?t=pHhSm2AHBosGbbKCjTfXaw&s=08"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
+                      </svg></a>
+                    <a class="btn btn-outline-light btn-social" href="https://tiktok.com/@aroc_ug"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                      </svg></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@Aroc_ug"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/aroc_uganda?igsh=MWJ4YzNwaHQyaXU4cg=="><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-         <!-- Newsletter Start -->
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
-                </div>
-                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
-                    <div class="position-relative w-100 mt-3 mb-2">
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                            placeholder="Enter Your Email" style="height: 48px;">
-                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                class="fa fa-paper-plane text-primary fs-4"></i></button>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                <a class="btn btn-link" href="about.html">About Us</a>
+                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                <a class="btn btn-link" href="project.html"> Projects</a>
+                <a class="btn btn-link" href="testimonial.html">Testimonial</a>
+                <a class="btn btn-link" href="team.html">Team</a>
+            </div>
+            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <a class="btn btn-link" href="ppolicy.html">Privacy Policy</a>
+                <a class="btn btn-link" href="Tc.html">Terms & Conditions</a>
             </div>
         </div>
-    <!-- Newsletter End -->
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
-            <div class="copyright">
-                <div class="row">
-                    <p style="text-align: center"> Copyright &copy;<script>document.write(new Date().getFullYear())</script> artrock All Rights Reserved</p>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FAQs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
     </div>
-    <!-- Footer End -->
+     <!-- Newsletter Start -->
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+            </div>
+            <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                <h1 class="text-white mb-4">Art in your inbox</h1>
+                <div class="position-relative w-100 mt-3 mb-2">
+                    <form action="submit_form.php" method="post">
+                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" name="dmcimateview_email_sub" id="dmcimateview_email_sub" required="required"
+                        placeholder="Enter Your Email" style="height: 48px;">
+                    <button type="submit" id="dmcimateview_sub_send" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                            class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Newsletter End -->
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+            <div class="row">
+                <p style="text-align: center">Aroc &copy; <script>document.write(new Date().getFullYear())</script></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- whatsapp button  -->
+<a href="https://api.whatsapp.com/send?phone=256702202491" class="whatsappButton" target="_blank">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 
-
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!--  Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>

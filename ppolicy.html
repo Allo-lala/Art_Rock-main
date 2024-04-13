@@ -41,7 +41,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">Aroc</h1>
+                    <img id="logo" src="img/logo.png" alt="logo">
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -52,7 +52,7 @@
                         <a href="index.html" class="nav-item nav-link ">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="indexEC.html" class="nav-item nav-link">Our Gallery</a>
+                        <a href="gallery.html" class="nav-item nav-link">Our Gallery</a>
                         <a href="ArtBoard.html" class="nav-item nav-link">Art Board</a>
                         <a href="project.html" class="nav-item nav-link ">Projects</a>
                         <div class="nav-item dropdown">
@@ -118,15 +118,14 @@
                     <p><i class="fa fa-phone-alt me-3"></i><a href="tel:+256702202491" class="footer-link">+256702202491</a></p>
                     <p><i class="fa fa-envelope me-3"></i><a href="mailto:arocug@gmail.com" class="contact-link">arocug@gmail.com</a></p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <a class="btn btn-outline-light btn-social" href="https://x.com/Aroc_ug?t=pHhSm2AHBosGbbKCjTfXaw&s=08"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
                             <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
                           </svg></a>
-                        <a class="btn btn-outline-light btn-social" href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <a class="btn btn-outline-light btn-social" href="https://tiktok.com/@aroc_ug"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
                             <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
                           </svg></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@Aroc_ug"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/aroc_uganda?igsh=MWJ4YzNwaHQyaXU4cg=="><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
@@ -139,11 +138,10 @@
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <a class="btn btn-link" href="ppolicy.html">Privacy Policy</a>
                     <a class="btn btn-link" href="Tc.html">Terms & Conditions</a>
-                    <!-- <a class="btn btn-link" href="">Careers</a> -->
                 </div>
             </div>
         </div>
-         <!------------------------------------------------------------------ Newsletter Start----------------------------------------------------------------------- -->
+         <!-- Newsletter Start -->
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
@@ -151,11 +149,11 @@
                 <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
                     <h1 class="text-white mb-4">Art in your inbox</h1>
                     <div class="position-relative w-100 mt-3 mb-2">
-                        <form action="" method="post" class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                        <form action="submit_form.php" method="post">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" name="dmcimateview_email_sub" id="dmcimateview_email_sub" required="required"
                             placeholder="Enter Your Email" style="height: 48px;">
-                        <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                class="fa fa-paper-plane text-primary fs-4"></i>
-                        </button>
+                        <button type="submit" id="dmcimateview_sub_send" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </form>
                     </div>
                 </div>
@@ -165,18 +163,10 @@
         <div class="container wow fadeIn" data-wow-delay="0.1s">
             <div class="copyright">
                 <div class="row">
-                    <p style="text-align: center"> &copy; <script>document.write(new Date().getFullYear())</script></p>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="index.html">Home</a>
-                            <a href="index.html">Cookies</a>
-                            <a href="faq.html">FAQs</a>
-                        </div>
-                    </div>
+                    <p style="text-align: center">Aroc &copy; <script>document.write(new Date().getFullYear())</script></p>
                 </div>
             </div>
         </div>
-        
     </div>
     <!-- Footer End -->
 
@@ -185,9 +175,9 @@
         <i class="bi bi-whatsapp"></i>
     </a>
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -197,9 +187,9 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!--  Javascript -->
+    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>

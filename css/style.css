@@ -5,6 +5,15 @@ body{
     font-family: sans-serif;
 }
 
+#logo {
+    display: inline-block;
+    margin: 15px;
+    float: left;
+    height: 60px;
+    width: auto;
+    /* border-radius: 50%; */
+}
+
 :root {
     --primary: #070707;
     --secondary: #0c0c0c;
@@ -85,13 +94,6 @@ button{
     margin: 0;
     box-sizing: border-box;
   }
-/*** Spinner ***/
-#spinner {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
-}
 
 /* whatsapp button */
 .whatsappButton {
